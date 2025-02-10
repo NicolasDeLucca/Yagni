@@ -1,0 +1,16 @@
+{
+    "name": "logging-service",
+    "version": "1.0.0",
+    "main": "src/index.ts",
+    "scripts": {
+        "start": "node dist/logging/src/index.js",
+        "build": "npx tsc"
+    },
+    "dependencies": {
+        "mongoose": "^6.1.2",
+        "winston": "^3.16.0"
+    },
+    "devDependencies": {
+        "typescript": "^5.6.2"
+    }
+}

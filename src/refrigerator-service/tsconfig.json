@@ -1,0 +1,18 @@
+{
+  "extends": "../tsconfig.base.json",
+  "compilerOptions": {
+    "outDir": "./dist",
+    "allowJs": true
+  },
+  "include": [
+    "src/**/*.ts",
+    "src/*.ts",
+    "src/**/*.js", 
+    "src/*.js" 
+  ],
+  "exclude": [
+    "node_modules",
+    ".build",
+    "src/migrations/*.js"
+  ]
+}

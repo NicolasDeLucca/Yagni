@@ -1,0 +1,16 @@
+# R7-R10: Desplegar listados con tiempos promedio menores o iguales a 500 ms (modo normal) / 1 s (modo sobrecargado)
+
+config:
+  target: "http://localhost:3001" 
+  phases:
+    - duration: 60 
+      arrivalRate: 3000 
+    - duration: 60
+      arrivalRate: 8000 
+scenarios:
+  - name: "Get All Products"
+    flow:
+      - get:
+          url: "/products" 
+      - think: 1    
+# .. 

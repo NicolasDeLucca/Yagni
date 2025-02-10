@@ -1,0 +1,31 @@
+{
+  "name": "payment-middleware",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/index.ts",
+  "scripts": {
+    "build": "npx tsc",
+    "start": "node dist/payment-middleware/src/index.js",
+    "dev.1": "nodemon src/index.ts",
+    "dev.2": "npx ts-node src/index.ts"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/express": "^4.17.21",
+    "body-parser": "^1.20.3",
+    "dotenv": "^16.4.5",
+    "express": "^4.18.3",
+    "mongoose": "^6.1.2",
+    "node-fetch": "^3.3.1",
+    "winston": "^3.16.0"
+  },
+  "devDependencies": {
+    "@types/dotenv": "^8.2.0",
+    "@types/node": "^20.4.1",
+    "nodemon": "^3.1.7",
+    "ts-node": "^10.9.2",
+    "tsx": "^3.12.7",
+    "typescript": "^5.6.2"
+  }
+}

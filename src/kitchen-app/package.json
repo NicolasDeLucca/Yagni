@@ -1,0 +1,30 @@
+{
+    "name": "kitchen-app",
+    "version": "1.0.0",
+    "description": "",
+    "main": "src/app.ts",
+    "scripts": {
+        "build": "npx tsc",
+        "start": "node dist/kitchen-app/src/app.js",
+        "dev": "nodemon src/app.ts"
+    },
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "@types/express": "^4.17.21",
+        "axios": "^1.7.7",
+        "dotenv": "^16.4.5",
+        "express": "^4.21.1",
+        "jsonwebtoken": "^9.0.2",
+        "mongoose": "^6.1.2",
+        "node-fetch": "^3.3.1"
+    },
+    "devDependencies": {
+        "@types/jsonwebtoken": "^9.0.7",
+        "@types/node": "^20.4.1",
+        "nodemon": "^3.1.7",
+        "ts-node": "^10.9.2",
+        "tsx": "^3.12.7",
+        "typescript": "^5.6.2"
+    }
+}

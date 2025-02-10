@@ -1,0 +1,19 @@
+# R14: Clave enviada al conductor (menor o igual a 1 segundo bajo cualquier condición de carga)
+
+config:
+  target: "http://localhost:443"
+  phases:
+    - duration: 60
+      arrivalRate: 3000 
+    - duration: 60
+      arrivalRate: 8000 
+  - name: "Driver Receives Key"
+    flow:
+      - post:
+          url: "/send-otp"
+          json:
+            product_quantity: 1
+            product_id: 1
+            service: "userDriver-refrigerator_key"
+            refrigerator_id: 1
+      - think: 1

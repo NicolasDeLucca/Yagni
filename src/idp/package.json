@@ -1,0 +1,19 @@
+{
+    "name": "idp-management",
+    "version": "1.0.0",
+    "main": "src/seedUsers.ts",
+    "scripts": {
+        "start": "node dist/idp/src/seedUsers.js",
+        "build": "npx tsc"
+    },
+    "dependencies": {
+        "auth0": "3.0.0",
+        "dotenv": "^16.4.5",
+        "mongoose": "^8.8.2"
+    },
+    "devDependencies": {
+        "@types/auth0": "^3.3.10",
+        "@types/dotenv": "^8.2.3",
+        "typescript": "^5.6.2"
+    }
+}

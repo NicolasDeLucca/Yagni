@@ -1,0 +1,36 @@
+{
+    "name": "refrigerator-app",
+    "version": "1.0.0",
+    "description": "",
+    "main": "src/app.ts",
+    "scripts": {
+        "build": "npx tsc",
+        "start": "node dist/refrigerator-app/src/app.js",
+        "start_rsa": "node dist/refrigerator-app/src/cert.js",
+        "dev.1": "nodemon src/app.ts",
+        "dev.2": "npx ts-node src/app.ts"
+    },
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "@types/express": "^4.17.21",
+        "amqplib": "^0.10.4",
+        "axios": "^1.7.7",
+        "dotenv": "^16.4.5",
+        "express": "^4.18.3",
+        "jsonwebtoken": "^9.0.2",
+        "mongoose": "^6.1.2",
+        "node-fetch": "^3.3.1",
+        "node-forge": "^0.10.0",
+        "winston": "^3.16.0"
+    },
+    "devDependencies": {
+        "@types/jsonwebtoken": "^9.0.7",
+        "@types/node": "^20.4.1",
+        "@types/node-forge": "^1.3.11",
+        "nodemon": "^3.1.7",
+        "ts-node": "^10.9.2",
+        "tsx": "^3.12.7",
+        "typescript": "^5.6.2"
+    }
+}

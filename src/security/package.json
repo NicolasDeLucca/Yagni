@@ -1,0 +1,21 @@
+{
+    "name": "security-service",
+    "version": "1.0.0",
+    "main": "src/ca.ts",
+    "scripts": {
+        "build": "npx tsc",
+        "start": "node dist/security/src/ca.js",
+        "dev.1": "nodemon src/ca.ts",
+        "dev.2": "npx ts-node src/ca.ts"
+    },
+    "dependencies": {
+        "mongoose": "^8.8.1",
+        "node-forge": "^0.10.0",
+        "ts-node": "^10.9.2",
+        "tsx": "^3.12.7",
+        "typescript": "^5.6.2"
+    },
+    "devDependencies": {
+        "typescript": "^5.6.2"
+    }
+}
